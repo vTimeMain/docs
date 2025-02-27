@@ -1,0 +1,93 @@
+---
+sidebar_position: 17
+title: Otomatik Moderasyon
+description: Sunucunuz için ProBot Automod'u düzgün bir şekilde yapılandırmak için bir kılavuz
+keywords: [Spam, automation, invite links, caps, mention] 
+---
+
+
+# Otomatik Moderasyon
+
+ProBot Automod ile sorunsuz ve stressiz bir sunucu ortamı sağlayın. Spam gönderenlere ve reklam verenlere elveda deyin ve ProBot'un topluluğunuz için güvenli ve emniyetli bir ortam sağlamak için yorulmadan çalıştığını bilmenin rahatlığını yaşayın.
+
+:::info
+
+ProBot Yönetim Paneli, burada açıklanan yapılandırmaların yönetildiği yerdir.
+
+1. Kontrol paneline gidin ve oturum açın.
+2. Soldaki menüden sunucunuzu seçin.
+3. Modülü seçin ve etkinleştirildiğinden emin olun.
+
+:::
+
+## Tespit Seçenekleri
+
+Sunucunuzdaki potansiyel spam veya kötü içerik içeren mesajları tespit etmek için aşağıdaki seçenekler mevcuttur:
+
+:::note
+
+Discord'da AutoMod kuralı tarafından yönetilen ve AutoMod seçeneğinin yanında belirtilecek bazı algılama seçeneklerimiz var. ProBot, belirtilen discord otomatik mod taramasına sahip olmayanları yönetecektir.
+
+:::
+
+> **SPAM (5 MESSAGES/5 SEC)**: Bu seçenek, bir kullanıcının beş saniyelik bir sürede beşten fazla mesaj gönderdiğini algılar.
+
+> **UYGUNSUZ KELİMELER**: Bu seçenek, kötü kelimeler içeren mesajları algılar. **(Discord AutoMod tarafından desteklenen mesaj algılama)**
+
+> **ÇOĞALTILMIŞ METİN**: Bu seçenek, yinelenen metin içeren iletileri algılar.
+
+> **TEKRARLANAN MESAJLAR**: Bu seçenek, "SPAM SPAM SPAM SPAM" gibi metin veya satırları tekrar eden mesajları algılar. **(Tier 2)**
+
+> **DISCORD DAVETLERİ**: Bu seçenek, discord davet bağlantıları içeren mesajları algılar. **(Discord AutoMod tarafından desteklenen mesaj tarama)**
+
+> **BAĞLANTILAR**: Bu seçenek, bağlantı içeren mesajları algılar. (Discord AutoMod tarafından desteklenen mesaj tarama)
+
+> **SPAMLANMIŞ CAPSLER (70% > CAPS)**: Bu seçenek, "MERHABA BEN PROBOT" gibi tamamı büyük harflerle yazılan mesajları algılar. **(Discord AutoMod tarafından desteklenen mesaj tarama)**
+
+> **EMOJI SPAMLAMA**: Bu seçenek, sekiz veya daha fazla emoji içeren mesajları algılar.
+
+> **TOPLU BAHSETME**: Bu seçenek, çok sayıda kullanıcıdan bahseden mesajları algılar. **(Discord AutoMod tarafından desteklenen mesaj tarama)**
+
+## Eylem Seçenekleri
+
+Her algılama seçeneği, topluluğunuzun özel ihtiyaçlarını karşılamak için üç farklı eylem seçeneği sunar. Bu eylemler:
+
+1. **Mesajı Engelle**: Tespiti tetikleyen mesajı siler.
+
+2. **Üyeyi Sustur**: Tetikleme mesajını gönderen üyeyi susturur.
+
+3. **Zaman Aşımı Uygula**: Tetikleme mesajını gönderen üye zaman aşımına uğrar. **(Yalnızca Discord AutoMod Rule tarafından yönetilen algılama seçeneklerinde mevcuttur)**
+
+## Ayarlar
+
+Her algılama seçeneği, dişli çark simgesi "⚙️" ile gösterilen bir **Ayarlar** seçeneğine sahiptir. Bu seçeneğe tıklamak, sunucunuz için ProBot Automod kullanımını optimize etmek üzere ayarlayabileceğiniz bir dizi ayarı ortaya çıkaracaktır.
+
+> **Devre Dışı Kanallar**: Algılama seçeneklerinden muaf tutulacak kanallar.
+
+> **Devre Dışı Roller**: Algılama seçeneklerinden muaf tutulacak roller.
+
+**Uygunsuz Kelimeler** ve **Bağlantılar** otomasyon seçeneklerinde, varsayılan seçeneklerde bulunmayan ek ayarlar vardır:
+
+> **Uygunsuz Kelimeler**
+
+- Uygunsuz Kelimeler: Algılama seçeneğini tetikleyecek tek tek kötü sözcüklerin listesi.
+
+- BİR KELİMENİN PARÇASI İSE EŞLEŞTİRME: Bu seçenek etkinleştirilirse, bu seçenek kötü sözcükleri içeren ancak onlarla aynı olmayan sözcüklerin algılanmasını engeller.
+
+> **Bağlantılar**
+
+- Beyaz Liste URL'leri: Bağlantı içerseler bile algılama seçeneğini tetiklemeyen URL'lerin listesi.
+
+- Kara Liste URL'leri: Bağlantı içermeseler bile algılama seçeneğini tetikleyecek URL'lerin listesi.
+
+## Ek özellikler
+
+Yukarıda açıklanan algılama ve eylem seçeneklerine ek olarak, ProBot Automod aşağıdaki özellikleri de içerir:
+
+> **DEVRE DIŞI KANALLAR**: Tüm algılama seçeneklerinden muaf olacak kanallar.
+
+> **DEVRE DIŞI ROLLER**: Tüm algılama seçeneklerinden muaf tutulacak roller.
+
+> **SADECE RESİM KANALLARI**: Belirli kanallarda yalnızca görüntülerin gönderilmesini zorunlu kılmanıza olanak tanır.
+
+> **SADECE YOUTUBE BAĞLANTISI KANALLARI**: Belirli kanallarda yalnızca YouTube bağlantılarının gönderilmesini zorunlu kılmanıza olanak tanır.

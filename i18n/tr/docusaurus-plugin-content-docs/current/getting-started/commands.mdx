@@ -1,0 +1,112 @@
+---
+sidebar_position: 5
+slug: /getting-started/commands
+description: Tüm komutların listesine buradan ulaşabilirsiniz.
+---
+
+# Komutlar
+
+Bu bölümde, ProBot'da bulunan komutlar ve bu komutların kullanımları hakkında bilgi edinebilirsiniz.
+
+:::important
+
+- Varsayılan bot öneki olarak Slash komutları kullanılmaktadır. Tüm örneklerde `/` slash komutu kullanılmaktadır.
+
+- `[` `]` bulunan yerler her komut için zorunludur, ancak `(` `)` bulunan yerler isteğe bağlıdır.
+
+:::
+
+## Genel
+
+| Komut | Açıklama | Kullanım |
+| ------------- |:-------------:|:-------------:|
+| /credits | Kendinizin veya başka birinin kredisini görüntüleyin | /credits [kullanıcı] (tutar) |
+| /rep | Herhangi birine itibar puanı vermek için kullanabilirsiniz Her 24 saatte bir kullanılabilir | /rep [kullanıcı] |
+| /moveme | Sizi başka bir ses kanalına taşır | /moveme [kanal veya kullanıcı] |
+| /color | Sunucudaki renginizi değiştirmek için kullanabilirsiniz | /color [renk numarası] |
+| /colors | Kullanılabilir renkleri listeler | /colors |
+| /short | Bir URL'yi kısaltmak için kullanabilirsiniz | /short [URL] |
+| /roll | Zar atmak için kullanabilirsiniz | /roll (sayı) |
+
+## Seviye
+
+| Komut | Açıklama | Kullanım |
+| ------------- |:-------------:|:-------------:|
+| /profile | Profil kartını/kartınızı görüntüleyin | /profile (kullanıcı) |
+| /rank | Seviye kartını/kartınızı görüntüleyin | /rank (kullanıcı) |
+| /top | Metin veya ses seviyesi en yüksek kişileri görüntüleyin | /top (gün/hafta/ay) |
+| /title | Profil başlığınızı değiştirebilirsiniz | /title [yeni başlık] |
+| /setxp | Kullanıcının XP'sini ayarlamak için kullanabilirsiniz | /setxp [kullanıcı] [tür] [yeni_xp] |
+| /setlevel | Kullanıcının seviyesini değiştirmek için kullanabilirsiniz | /setlevel [kullanıcı] [tür] [yeni_level] |
+
+## Bilgi Komutları
+
+| Komut | Açıklama | Kullanım |
+| ------------- |:-------------:|:-------------:|
+| /user | Kullanıcı bilgilerini/bilgilerinizi görüntüleyebilirsiniz | /user (kullanıcı) |
+| /avatar | Profil fotoğrafını/fotoğrafınızı getirir | /avatar (kullanıcı) |
+| /server | Sunucu hakkında bilgileri gösterir | /server |
+| /roles | Sunucudaki roller ve üyeler hakkında bilgi almak için kullanabilirsiniz | /roles |
+
+## Moderasyon
+
+| Komut | Açıklama | Kullanım |
+| ------------- |:-------------:|:-------------:|
+| /setnick | Üyenin sunucudaki ismini değiştirebilirsiniz | /setnick [kullanıcı] (kullanıcı_adı) |
+| /ban | Üyeyi yasaklayabilirsiniz | /ban [kullanıcı] (süre) (sebep) |
+| /unban | Üyenin yasaklanmasını kaldırırsınız | /unban [kullanıcı veya kullanıcı ID] |
+| /kick | Üyeyi sunucudan atabilirsiniz | /kick [kullanıcı] (sebep) |
+| /vkick | Üyeyi sesli kanaldan atarsınız | /vkick [kullanıcı] |
+| /mute text | Üyenin metin kanallarına yazmalarını engelleyebilirsiniz | /mute text [kullanıcı] (süre) (sebep) |
+| /unmute text | Üyenin metin kanallarında ki susturmasını kaldırabilirsiniz | /unmute [kullanıcı] |
+| /mute voice | Üyenin sesli kanallarda konuşmalarını engelleyebilirsiniz | /mute voice [kullanıcı] (süre) (sebep) |
+| /unmute voice | Üyenin sesli kanallarda ki susturmasını kaldırabilirsiniz | /unmute voice [kullanıcı] |
+| /timeout | Üyenin mesaj göndermesini/tepki eklemesini veya sesli kanallara katılmasını engelleyin | /timeout [kullanıcı] (süre) (sebep) |
+| /untimeout | Üyenin zaman aşımı cezasını kaldırın | /untimeout [kullanıcı] |
+| /clear | Kanalda bulunan mesajları temizleyin | /clear (user/bots) (mesaj sayısı) | 
+| /move | Üyeyi başka bir ses kanalına taşıyın | /move [kullanıcı] (kullanıcı veya kanal) |
+| /role give | Üyeye rol ekleyin/kaldırın | /role give [kullanıcı] [rol] (toplu rol) |
+| /role remove | Üyeden rolleri kaldırın | /role remove [kullanıcı] [rol] (toplu rol) |
+| /role multiple | Üyelerden rol(ler) ekleyin/çıkarın | /role multiple [give or_remove] [rol] [pick_type] (rol) |
+| /points set | Kullanıcının puanını ayarlayın | /points set [kullanıcı] [puan] |
+| /points list | Tüm puanları görüntüleyin | /points list (rol) (sayfa) |
+| /points decrease | Kullanıcının puanlarını azaltın | /points decrease [kullanıcı] [puan] |
+| /points increase | Kullanıcının puanlarını arttırın | /points increase [kullanıcı] [puan] |
+| /points reset | Puanları sıfırlayın | /points reset (kullanıcı) |
+| /warn | Üyeyi uyarın | /warn [kullanıcı] [sebep] |
+| /warn_remove | Kullanıcının/bütün herkesin uyarılarını kaldırın | /warn_remove [kullanıcı/all/warnID] |
+| /warnings | Kullanıcının/herkesin uyarılarının listesini görüntüleyin | /warnings (kullanıcı) |
+| /lock | `@everyone` rolünün kanala mesaj göndermesini engelleyin | /lock (kanal) (sebep) |
+| /unlock | `@everyone` rolünün kanala mesaj göndermesini tekrar etkinleştirin | /unlock (kanal) |
+| /setcolor | Rolün rengini girdiğiniz HEX kodlarıyla değiştirir | /setcolor [rol ismi] [renk kodu]
+| /slowmode | Kanalda yavaş modu etkinleştirin/devre dışı bırakın | /slowmode (süre) |
+| /reset | Tüm üyelerin/belirli üyelerin Metin/ses/davetiye XP puanlarını sıfırlayın | /reset [text / voice / invites / limits) [all / kullanıcı] |
+
+<details>
+
+<summary>Önemli Moderasyon Notları</summary>
+
+- Sadece `Yönetici` iznine, kontrol panelinde `Mod Rolleri`ne veya o komutun iznine sahip kullanıcılar moderasyon komutlarını kullanabilir. __Örneğin__, yasaklama iznine sahip kullanıcılar `/ban` komutunu kullanabilir.
+
+- Komut kullanılırken zaman belirtilmez ise, tüm komutları için varsayılan süre **3 aydır**; Bu zaman değiştirilebilir.
+
+</details>
+
+## VIP
+
+:::caution 
+
+Aşağıdaki komutlar yalnızca premium aboneler tarafından kullanılabilir.
+
+:::
+
+| Komut | Açıklama | Kullanım |
+| ------------- |:-------------:|:-------------:|
+| /vip info | Premium botunuzla ilgili bilgileri gösterir | /vip |
+| /vip move | Premium botunuzu yeni bir sunucuya taşıyın `Tier 2` | /vip move [bot numarası] |
+| /vip restart | Premium botunuzu yeniden başlatın `Tier 2` | /vip restart |
+| /vip whitelist | ProBot yönetim paneline erişime izin vermek için bir kullanıcıyı beyaz listeye ekleyin | /vip whitelist [kullanıcı] |
+| /vip avatar | Premium botunuzun profil resmini değiştirin `Tier 2` | /vip avatar |
+| /vip username | Premium botunuzun ismini değiştirin `Tier 2` | /vip username [isim] |
+| /vip status | Premium botunuzun durumunu değiştirin `Tier 2` | /vip status [durum] |
+| /vip transfer | Bot sahipliğini başka bir kullanıcıya aktarın `Tier 2` | /vip transfer [kullanıcı]

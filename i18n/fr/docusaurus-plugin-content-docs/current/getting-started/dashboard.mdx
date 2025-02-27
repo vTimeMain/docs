@@ -1,0 +1,39 @@
+---
+sidebar_position: 2
+slug: /getting-started/dashboard
+title: Configuration Du Tableau De Bord
+description: Un guide complet sur l'utilisation du tableau de bord pour gérer votre serveur et configurer les modules et les commandes.
+keywords: [dashboard, configuration, manage, server, modules]
+---
+
+# Tableau de bord: Votre guichet unique pour la gestion de serveur
+
+Le tableau de bord est le cœur de la configuration de votre serveur. Il fournit une interface facile à utiliser pour gérer tous les modules et commandes. Dites adieu aux configurations de ligne de commande complexes et chronophages!
+
+## Accéder au tableau de bord
+
+L'accès au tableau de bord est simple et direct. Voici les étapes:
+- Accédez au [website](https://probot.io/) et connectez-vous à votre compte.
+- Le bouton du tableau de bord apparaîtra sur la même page, cliquez dessus pour accéder au tableau de bord.
+
+:::caution
+Vous avez besoin de l'autorisation `Administrateur` pour voir votre serveur dans la liste.
+:::
+
+## Configuration des modules et des Commandes
+
+Chaque module du tableau de bord est livré avec un bouton de commutation dans le coin supérieur droit, qui vous permet de désactiver toutes les commandes de ce module. De plus, chaque commande a son propre bouton de commutation pour l'activer ou la désactiver, ainsi qu'un bouton d'édition pour effectuer des personnalisations.
+
+Voici quelques-unes des options de personnalisation disponibles pour chaque commande:
+- **Alias**: Un alias personnalisé pour la commande, facilitant sa mémorisation et son utilisation.
+- **Rôles Activés**: Limitez qui peut utiliser la commande à des rôles spécifiques.
+- **Rôles Désactivés**: Empêcher certains rôles d'utiliser la commande.
+- **Salons Activés**: Le bot ne répondra à la commande que dans les canaux spécifiés.
+- **Salons Désactivés**: Le bot ne répondra pas à la commande dans ces canaux.
+- **Suppression automatique avec suppression du message**: La réponse du bot sera supprimée si l'expéditeur supprime son message.
+- **Message d'invocation de commande à suppression automatique**: Le message de commande envoyé par l'expéditeur sera supprimé immédiatement après l'envoi.
+- **Suppression automatique du message de réponse du bot après 5 secondes**: La réponse du bot sera supprimée 5 secondes après son envoi.
+
+:::caution
+Vous ne voyez pas votre serveur dans la liste? Cela signifie que vous ne disposez pas de l'autorisation `Administrateur` requise pour un accès complet au tableau de bord. Assurez-vous que votre rôle dispose de l'autorisation `Administrateur` explicitement accordée dans votre paramètre de rôle.
+:::

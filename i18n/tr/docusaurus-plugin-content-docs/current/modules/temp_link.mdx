@@ -1,0 +1,108 @@
+---
+sidebar_position: 13
+keyword: [link, temporary link command, premium subscribers, link uses, invite link] 
+---
+
+# Geçici Linkler
+
+Geçici Bağlantı Komutu özelliği, sunucu yöneticilerinin, kullanıcıların arkadaşlarını kolayca davet etmeleri için bir komut oluşturmasına olanak tanır. Aşağıdaki talimatlar, komutun nasıl kurulacağına ilişkin adım adım bir kılavuz sağlar.
+
+:::info
+
+Yönetim Paneli, burada açıklanan yapılandırmaların yönetildiği yerdir.
+
+1. Yönetim Paneline gidin ve oturum açın.
+2. Soldaki menüden sunucunuzu seçin.
+3. Modülü seçin ve etkinleştirildiğinden emin olun.
+
+:::
+
+:::caution
+
+Bu özellik yalnızca premium aboneler tarafından kullanılabilir.
+
+:::
+
+## Komut İsmi
+
+İlk adım, kullanıcıların kişiselleştirilmiş bir bağlantı almak için yazabilecekleri bir komut adı girmektir. Bu komut istenen herhangi bir metin, prefix, sembol veya karakter olabilir.
+
+## Mesajlar
+
+### Bağlantı İstendiğinde Mesaj Gönder
+
+kullanıcı komutu yazdığında, yanıt olarak bağlantının kullanıcının DM'lerine başarıyla gönderildiğini belirten bir mesaj görünür. Bu mesajın metni istenildiği gibi ayarlanabilir.
+
+### Bağlantı Gönderilemediğinde Mesaj
+
+Bot bağlantıyı gönderemezse, yanıt olarak, kullanıcının DM'leri kapalı olduğu için botun bağlantıyı gönderemediğini belirten ayrı bir mesaj görüntülenecektir. Bu mesajın metni de istenildiği gibi ayarlanabilir.
+
+## Roller
+
+### Devre Dışı Roller
+
+Yönetici, belirli rollerin bağlantı komutunu kullanmasını engelleyebilir.
+
+### Etkin Roller
+ 
+Seçilen rollere sahip kullanıcılar bağlantı komutunu kullanabilecektir.
+
+## Kanallar
+
+### Devre Dışı Bırakılan Kanallar
+
+Bot, seçilen kanallardaki bağlantı komutuna yanıt vermeyecektir.
+
+### Etkin Kanallar
+ 
+Bot, seçilen kanallardaki bağlantı komutuna cevap verecektir.
+
+## Bağlantı Bilgileri
+
+### Bağlantı Mesajıyla Metin
+
+Bir kullanıcının komutu kullandığında DM'lerine gönderilen metin, bağlantının kullanımları ve sona erme süresiyle ilgili bilgilerin yanı sıra bir davet bağlantısı içerecektir. Bu mesajın metni istenildiği gibi ayarlanabilir.
+
+### Bağlantı Kullanımları
+
+Yönetici, bağlantının kaç kez kullanılabileceğini belirleyebilir ve bu bağlantıyla katılabilecek kullanıcı sayısını sınırlayabilir. Bağlantı kullanımlarının sayısını ayarlamak için ayarlanabilir bir kaydırma çubuğu sağlanmıştır.
+
+### Davet Varsayılan Kanalı
+
+Yönetici, davet bağlantılarının hangi kanala ait olacağını belirleyebilir. Örneğin, yönetici "Test" kanalında kanalında davet bağlantısı oluşturursa, bağlantıyı kullanan kullanıcılar katıldıktan sonra "Test" kanalına yönlendirilir.
+
+### Bağlantının Dakika Olarak Geçerliliği
+
+Yönetici, bağlantının geçerliliğini dakika cinsinden belirtebilir. Bu süre içinde kullanılmadığı takdirde bağlantının kullanım süresi dolacaktır. Bağlantıyı ayarlamak için ayarlanabilir bir kaydırma çubuğu sağlanmıştır.
+
+## Bekleme zamanı
+
+### Saat Olarak Bekleme Süresi
+
+Yönetici, kullanıcıların bağlantıyı tekrar istemeleri için bir bekleme süresi ayarlayabilir.
+
+### Bekleme Süresinden Önce Kaç Bağlantı Talep Edilebilir?
+
+Yönetici, bekleme süresi uygulanmadan önce istenebilecek bağlantı sayısını ayarlayabilir.
+
+### Bekleme Süresi Mesajı
+
+Bir kullanıcı, bekleme süresi sona ermeden önce yeni bir bağlantı isteğinde bulunmaya çalıştığında, yanıt olarak, yeni bir bağlantı isteğinde bulunmadan önce belirtilen süre kadar beklemeleri gerektiğini belirten bir mesaj görüntülenir. Bu mesajın metni istenildiği gibi ayarlanabilir.
+
+## Bekleme Süresini Devre Dışı Bırak
+
+Yönetici, `Üye Davet Et` iznine sahip kullanıcıların bekleme süresini atlamasına ve istedikleri zaman bağlantı oluşturmasına izin verebilir.
+
+## Kullanıcı Komutu Çağrısını ve Botun Yanıtını Sil
+
+Yönetici, botun kullanıcının komutunu ve botun yanıtını beş saniye sonra silmesini veya kalıcı tutmasını seçebilir. Seçeneğin etkinleştirilmesi mesajı siler ve devre dışı bırakmak onları tutar.
+
+:::important
+
+Bunlar, geçici bağlantı seçeneklerimiz için sınırlar aşağıdadır;
+
+- Dakika cinsinden bağlantı süresi `1440`
+- Saat cinsinden bekleme süresi `9999999999999`
+- bekleme süresinden önce kaç bağlantı istenebilir? `9999999999999`
+
+:::

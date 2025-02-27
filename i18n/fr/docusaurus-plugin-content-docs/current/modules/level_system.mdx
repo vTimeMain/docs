@@ -1,0 +1,99 @@
+---
+sidebar_position: 6
+keywords: [Level System, Text, XP Roles, Role Rewards, Level-Up Message] 
+---
+
+# Système de Niveau
+
+Avec le système de mise à niveau ProBot, les membres actifs du serveur seront automatiquement récompensés par des rôles de niveau extraordinaires, des autorisations privilégiées et un accès aux canaux mystères une fois qu'ils auront atteint un niveau spécifique!
+
+:::info
+
+Le tableau de bord est l'endroit où les configurations décrites ici sont gérées.
+
+1. Accédez au tableau de bord et connectez-vous.
+2. Sélectionnez votre serveur dans le menu de gauche.
+3. Choisissez le module et assurez-vous qu'il est activé.
+
+:::
+
+Vous aurez initialement trois options distinctes, chacune pouvant être ajustée pour produire une expérience de mise à niveau plus individualisée.
+
+## Aucun rôle XP
+
+En utilisant cela, vous pouvez empêcher certains utilisateurs avec les rôles sélectionnés d'accumuler des points d'expérience n'importe où sur votre serveur.
+
+## Aucun salon XP
+
+Vous pouvez empêcher des canaux spécifiques d'accumuler des points d'expérience.
+
+## Message de Niveau Supérieur
+
+Envoyez des messages de félicitations aux membres qui sont passés d'un niveau à un autre. Vous pouvez également utiliser des variables uniques dans ces messages!
+
+:::caution
+
+Le **Message de Niveau Supérieur** ne sera envoyé qu'à ceux qui ont atteint un niveau supérieur dans un niveau textuel. Pour le moment, nous n'avons pas de message vocal.
+
+:::
+
+## Configuration
+
+La procédure d'établissement du système de récompense de rôle est décrite ci-dessous:
+
+
+Il y aura un bouton nommé `Ajouter une Récompense de Rôle` où vous pourrez ajouter la récompense de rôle, un niveau personnalisé que les utilisateurs doivent atteindre et d'autres options détaillées ci-dessous.
+
+### Niveau de Texte
+
+- Il s'agit du niveau de texte qu'un membre doit atteindre pour obtenir le rôle de niveau s'il a été défini indépendamment.
+
+- La plage de niveau de texte est de 0 à 100; fournir des récompenses supplémentaires aux utilisateurs lorsqu'ils atteignent le niveau requis.
+
+### Niveau de Voix
+
+- Il s'agit du niveau de voix qu'un membre doit atteindre pour obtenir le rôle de niveau s'il a été défini indépendamment.
+
+- La plage de niveau de voix est de 0 à 100; fournir des récompenses supplémentaires aux utilisateurs lorsqu'ils atteignent le niveau requis.
+
+### Récompense de Rôle
+
+Récompensez les membres avec des postes de niveau exceptionnel au fur et à mesure qu'ils progressent dans les niveaux et répondent à vos exigences.
+
+:::caution
+
+Si les rôles ne s'affichent pas, le rôle du bot est imbriqué sous tous les rôles de serveur. Pour résoudre ce problème, déplacez le rôle du bot vers le haut de la hiérarchie des rôles pour vous assurer que les rôles sont affichés.
+
+:::
+
+## Supprimer avec un Niveau Supérieur
+
+Il vous appartient entièrement de décider si les niveaux doivent s'empiler ou être supprimés lorsque les utilisateurs montent à des niveaux supérieurs.
+
+- Si vous désactivez l'option, les rôles se cumuleront.
+
+- Si vous activez l'option, les rôles sont supprimés lorsqu'un niveau supérieur est atteint.
+
+## Membre DM
+
+Avertit un membre lorsqu'il reçoit un rôle au niveau du texte par message direct.
+
+## Notes IMPORTANTES
+
+:::important Trois situations potentielles pouvant survenir lors de la configuration d'une exigence de niveau
+
+1. **Voix et texte**: si vous définissez le besoin pour le texte et le niveau de la voix sans laisser "0" dans aucune option, le texte et la voix seront requis. Cela nécessitera que l'utilisateur atteigne les deux niveaux pour obtenir la récompense de rôle.
+
+2. **Texte uniquement**: si vous définissez le niveau de texte requis et laissez la voix sur "0", seul le texte sera requis. Cela nécessitera que l'utilisateur atteigne le niveau nécessaire pour que le texte obtienne la récompense de rôle.
+
+3. **Voix uniquement**: si vous définissez le besoin de niveau de voix et laissez le texte sur "0", seule la voix sera requise. Cela nécessitera que l'utilisateur atteigne le niveau nécessaire pour que la voix obtienne la récompense de rôle.
+
+4. **Position de rôle**: si vous avez sélectionné les mêmes récompenses de rôle pour plusieurs niveaux, ne vous inquiétez pas : les utilisateurs recevront toujours le rôle que vous avez spécifié lorsqu'ils atteindront les exigences de n'importe quel niveau que vous avez défini pour le même rôle. .
+
+:::
+
+:::caution
+
+Les utilisateurs doivent taper des chats pour que le bot mette à jour leurs données XP et leur attribue des prix au niveau de la voix, et ce n'est qu'alors que le bot pourra les récompenser.
+
+:::

@@ -1,0 +1,183 @@
+---
+sidebar_position: 10
+keywords: [Self-Assignable Roles, Discord Buttons, Select Menus, Reaction Roles, Role Management] 
+---
+
+# Rôles Auto-Assignables
+
+Configurez des rôles exclusifs avec diverses options pouvant être utilisées pour améliorer le flux de travail et le style des messages.
+
+:::info
+
+Le tableau de bord est l'endroit où les configurations décrites ici sont gérées.
+
+1. Accédez au tableau de bord et connectez-vous.
+2. Choisissez votre serveur dans le menu de gauche.
+3. Sélectionnez le module et assurez-vous qu'il est activé.
+
+:::
+
+# Configuration
+
+Pour que le bot applique les options auto-assignables au message, vous devez d'abord créer un `message en embed` et l'envoyer à un canal.
+
+[Messages en Embed](https://docs.probot.io/docs/modules/embed) décrit comment créer et envoyer un message.
+
+1. Sélectionnez `Ajouter un message` dans le menu.
+2. Sélectionnez `Modifier` dans le menu.
+3. Dans le menu `Embed`, choisissez le message en embed que vous avez créé.
+4. Sélectionnez le message en embed que vous avez envoyé à un canal à partir de l'option `Choisir un message`.
+
+Vous êtes prêt à passer à l'une des options du module. 🙋
+
+## Limitation des Rôles par Utilisateur
+
+La limite du nombre de rôles que l'utilisateur peut jouer pour cette réaction et cette interaction spécifiques.
+
+# Bouton
+
+Une interaction de bouton Discord unique en son genre qui permet aux utilisateurs d'interagir facilement en un seul clic.
+
+1. Sélectionnez votre couleur de bouton préférée en cliquant sur le `bouton`.
+2. Sélectionnez `Ajouter un bouton` pour ajouter un bouton.
+3. Ensuite, vous verrez un bouton `Paramètres` et un bouton `Supprimer`.
+4. En sélectionnant `Paramètres`, les options suivantes s'afficheront :
+
+> Bouton Emoji et Texte
+
+- L'emoji et le texte que vous souhaitez voir apparaître sur le bouton.
+
+:::caution
+
+Le champ de texte est obligatoire; vous devez le remplir.
+
+:::
+
+> Couleurs
+
+- Vous aurez quatre options de couleur si vous souhaitez les modifier à tout moment.
+
+## Ajouter des Rôles
+
+Pour ajouter un rôle au bouton et que l'utilisateur le réactive lorsqu'il clique dessus, recherchez un signe plus `+` sur lequel vous pouvez cliquer et ajouter un rôle.
+
+:::info
+
+Vous pouvez inclure jusqu'à 25 boutons dans un seul message en embed.
+
+:::
+
+# Sélectionnez Menu
+
+Un discord distinct et simple à utiliser, sélectionnez le menu avec lequel le membre doit interagir et l'option d'avoir le ou les rôles.
+
+1. Sélectionnez `Sélectionner un menu` dans le menu déroulant.
+2. Ensuite, sélectionnez `Ajouter une option`.
+3. Plusieurs options vous seront présentées, chacune étant expliquée en détail ci-dessous:
+
+## Sélectionnez l'Espace Réservé du Menu
+
+Le texte que les utilisateurs doivent voir de l'extérieur sur l'option de menu de sélection avant de sélectionner des rôles.
+
+## Émoji
+
+L'emoji que vous voulez voir avant chaque option.
+
+## Étiqueter
+
+Le titre que les utilisateurs doivent voir au-dessus de chaque option.
+
+## Titre de l'Option
+
+Le titre d'option que vous souhaitez voir sous chaque titre d'option; peut être utilisé pour décrire le contenu de l'option.
+
+## Les Rôles
+
+L'option permettant de définir un rôle pour les utilisateurs lorsqu'ils interagissent avec une option de menu de sélection, cliquez sur le signe plus `+` affichera la liste des rôles du serveur.
+
+:::caution
+
+Un seul message en embed peut contenir jusqu'à 20 options de menu de sélection.
+
+:::
+
+# Réaction
+
+Les membres reçoivent un rôle lorsqu'ils cliquent sur une réaction dans les rôles de réaction traditionnels.
+
+1. Sélectionnez `Réaction` dans le menu déroulant.
+2. Sélectionnez `Ajouter un Emoji` dans le menu déroulant.
+3. Sélectionnez si vous souhaitez ajouter un emoji normal ou gif.
+4. Créez un rôle pour cette réaction en utilisant le signe plus `+`.
+
+:::caution
+
+Si vos rôles de serveur n'apparaissent pas dans le tableau de bord, déplacez le rôle du ProBot plus haut dans la hiérarchie des rôles de serveur.
+
+:::
+
+# Mode Rôle
+
+Vous aurez plusieurs options de mode pour le rôle de réaction.
+
+:::caution
+
+Le mode s'appliquera à toutes les options de ce message.
+
+:::
+
+## Basculer en Mode
+
+Ce mode ajoute ou supprime des rôles selon que l'utilisateur possède ou non les rôles. `Recommandé`
+
+## Mode Donner
+
+Ce mode ajoute des rôles chaque fois qu'une réaction/interaction est ajoutée ou supprimée. `Excellent pour accepter les règles!`
+
+
+## Mode de Prise de Vue
+
+Ce mode supprimera des rôles chaque fois qu'une réaction/interaction est ajoutée ou supprimée.
+
+# Type de Notification
+
+Vous aurez deux options pour gérer le type de notification, que vous souhaitiez qu'elle réponde à l'interaction de l'utilisateur ou qu'elle reste silencieuse: pas de cloche:
+
+## Notifiy le Type
+
+Cette option enverra un message de réponse qui ne peut être vu que par l'utilisateur qui a interagi avec l'interaction lorsqu'il ajoute, supprime ou n'apporte aucune modification aux rôles pour les garder à l'écoute.
+
+1. La première option est le message de réponse lorsque le rôle est ajouté.
+2. La deuxième option est le message de réponse lorsque le rôle est supprimé.
+3. La troisième option est lorsqu'aucune modification n'a été apportée aux rôles d'utilisateur.
+
+:::info
+
+Pour que le bot mentionne le rôle, incluez `{0}` dans le message de réponse, car il fait référence au rôle.
+
+:::
+
+## Type Silencieux
+
+Si vous souhaitez que les choses restent silencieuses sans attirer l'attention de l'utilisateur sur les messages de réponse du bot, cette option est pour vous car elle n'affichera aucun message de réponse.
+
+
+# Notes IMPORTANTES
+
+:::warning
+
+La réaction peut être interrompue si vous avez sélectionné des menus ou des boutons en arrière-plan mais que vous ne les utilisez pas ; Pour résoudre ce problème, vous devez supprimer toutes les options de menu et de bouton de sélection que vous avez peut-être ajoutées au même message mais que vous n'utilisez pas.
+
+:::
+
+:::warning
+
+Vous n'êtes pas autorisé à lier plusieurs messages avec des rôles auto-assignables au même message intégré, car cela pourrait entraîner problèmes.
+
+:::
+
+:::info
+
+Vous devez vous abonner au niveau "Premium Niveau 1/2" pour définir plusieurs rôles pour la même option.
+
+:::

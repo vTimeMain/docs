@@ -1,0 +1,108 @@
+---
+sidebar_position: 13
+keyword: [link, temporary link command, premium subscribers, link uses, invite link] 
+---
+
+# Liens Temporaires
+
+La fonction de commande de lien temporaire permet aux administrateurs de serveur de configurer une commande permettant aux utilisateurs d'inviter facilement leurs amis. Les instructions suivantes fournissent un guide étape par étape sur la configuration de la commande.
+
+:::info
+
+Le tableau de bord est l'endroit où les configurations décrites ici sont gérées.
+
+1. Accédez au tableau de bord et connectez-vous.
+2. Sélectionnez votre serveur dans le menu de gauche.
+3. Choisissez le module et assurez-vous qu'il est activé.
+
+:::
+
+:::caution
+
+Cette fonctionnalité est uniquement disponible pour les abonnés Premium.
+
+:::
+
+## Nom de la Commande
+
+La première étape consiste à entrer un nom de commande que les utilisateurs peuvent saisir pour recevoir un lien personnalisé. Cette commande peut être n'importe quel texte, préfixe, symbole ou caractère souhaité.
+
+## Messages
+
+### Message Lorsque le Lien est Demandé
+
+Lorsqu'un utilisateur saisit la commande, un message apparaîtra en réponse, indiquant que le lien a été envoyé avec succès aux DM de l'utilisateur. Le texte de ce message peut être ajusté à volonté.
+
+### Message Lorsque le Lien ne peut pas être Envoyé
+
+Si le bot ne peut pas envoyer le lien, un message séparé s'affichera en guise de réponse, indiquant que le bot n'a pas pu envoyer le lien car les DM de l'utilisateur sont fermés. Le texte de ce message peut également être ajusté à volonté.
+
+## Les Rôles
+
+### Rôles Désactivés
+
+L'administrateur peut empêcher des rôles spécifiques d'utiliser la commande de liaison.
+
+### Rôles Activés
+ 
+Les utilisateurs avec les rôles choisis pourront utiliser la commande de lien.
+
+## Salons
+
+### Salons Désactivées
+
+Le bot ne répondra pas à la commande de lien dans les salons choisis.
+
+### Salons Activés
+ 
+Le bot répondra à la commande de lien dans les salons choisis.
+
+## Informations sur le Lien
+
+### Texte avec le Message de Lien
+
+Le texte envoyé aux DM d'un utilisateur lorsqu'il utilise la commande comprendra un lien d'invitation ainsi que des informations sur les utilisations du lien et le délai d'expiration. Le texte de ce message peut être ajusté à volonté.
+
+### Utilisations des Liens
+
+L'administrateur peut spécifier combien de fois le lien peut être utilisé et limiter le nombre d'utilisateurs qui peuvent rejoindre avec ce lien. Une barre de défilement réglable est fournie pour définir le nombre d'utilisations du lien.
+
+### Salon d'Invitation par Défaut
+
+L'administrateur peut spécifier à quel canal les liens d'invitation appartiendront. Par exemple, si l'administrateur définit la piste sur `Test`, les utilisateurs qui utilisent le lien seront redirigés vers le canal `Test` lors de leur adhésion.
+
+### Âge du Lien en Minutes
+
+L'administrateur peut spécifier l'âge du lien en minutes. Le lien expirera s'il n'est pas utilisé dans ce délai. Une barre de défilement réglable est fournie pour régler la liaison.
+
+## Temps d'Attente
+
+### Temps d'Attente en Heures
+
+L'administrateur peut définir un délai d'attente pour que les utilisateurs demandent à nouveau le lien.
+
+### Combien de Liens Peuvent être Demandés avant le Temps d'Attente
+
+L'administrateur peut définir le nombre de liens pouvant être demandés avant que le temps d'attente ne soit appliqué.
+
+### Message de Temps d'Attente
+
+Lorsqu'un utilisateur tente de demander un nouveau lien avant la fin du temps d'attente, un message apparaîtra comme réponse indiquant qu'il doit attendre le temps spécifié avant de demander un nouveau lien. Le texte de ce message peut être ajusté à volonté.
+
+## Désactiver le Temps d'Attente
+
+L'administrateur peut autoriser les utilisateurs disposant de l'autorisation `Invite Members` à contourner le temps d'attente et à créer des liens à tout moment.
+
+## Supprimer l'Invocation de la Commande Utilisateur et la Réponse du Bot
+
+L'administrateur peut choisir de demander au bot de supprimer la commande de l'utilisateur et la réponse du bot après cinq secondes ou de la conserver. L'activation de l'option supprimera le message et la désactiver le conservera.
+
+:::important
+
+Voici les limites suivantes pour nos options de lien temporaire;
+
+- Âge du lien en minutes `1440`
+- Temps d'attente en heures `9999999999999`
+- Combien de liens peuvent être demandés avant le temps d'attente `9999999999999`
+
+:::

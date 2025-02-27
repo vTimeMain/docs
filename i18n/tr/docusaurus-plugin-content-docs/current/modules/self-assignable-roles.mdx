@@ -1,0 +1,183 @@
+---
+sidebar_position: 10
+keywords: [Self-Assignable Roles, Discord Buttons, Select Menus, Reaction Roles, Role Management] 
+---
+
+# Tepki Rolleri 
+
+Sunucudaki deneyimi iyileştirmek için kullanılabilecek çeşitli seçeneklerle özel roller ayarlayın.
+
+:::info
+
+ProBot Yönetim Paneli, burada açıklanan yapılandırmaların yönetildiği yerdir.
+
+1. Yönetim paneline gidin ve oturum açın.
+2. Soldaki menüden sunucunuzu seçin.
+3. Modülü seçin ve etkinleştirildiğinden emin olun.
+
+:::
+
+# Kurulum
+
+Botun Tepki Rol seçenekleri mesaja uygulaması için, önce bir 'Gömülü Mesaj' oluşturmalı ve bunu bir kanala göndermelisiniz.
+
+[Gömülü Mesajlar](https://docs.probot.io/docs/modules/embed) adresinden mesajın nasıl oluşturulacağını ve gönderileceğini inceleyebilirsiniz.
+
+1. `Mesaj Ekle` butonuna basın.
+2. `Düzenle` butonuna basın.
+3. `Gömülü Mesaj` menüsünden, oluşturduğunuz mesajı seçin.
+4. Kanala gönderdiğiniz gömülü mesajı `Mesaj seçin` kısmından seçin.
+
+Modülü kurmaya hazırsınız. 🙋
+
+## Kullanıcı Başına Rol Sınırı
+
+Bu seçenek kullanıcının bir mesaj ile etkileşimde bulunarak alabileceği en fazla rol sınırından bahsetmektedir.
+
+# Buton
+
+Kullanıcıların tek bir tıklamayla kolayca etkileşime geçmesini sağlayan, türünün tek örneği Discord buton etkileşimidir.
+
+1. `Buton` seçeneğini seçin ve ardından istediğiniz buton rengini ayarlayabilirsiniz.
+2. Buton eklemek için `Buton Ekle` butonuna basabilirsiniz.
+3. Ardından, bir `Ayarlar` menüsü ve bir `Sil` butonu göreceksiniz.
+4. `Ayarlar`a tıkladığınızda size aşağıdaki seçenekler sunulur:
+
+> Buton Emojisi ve metin
+
+- Butonda görünmesini istediğiniz emoji ve metin.
+
+:::caution
+
+Metin alanı zorunludur.
+
+:::
+
+> Renkler
+
+- Değiştirmek isterseniz 4 renk seçeneğiniz mevcuttur.
+
+## Rol Ekle
+
+Butona bir rol eklemek ve kullanıcı üzerine tıkladığında onu kullanıcıya vermesi için, '+' artı butonundan rol ekleyin.
+
+:::info
+
+Tek bir gömülü mesaja en fazla 25 buton ekleyebilirsiniz.
+
+:::
+
+# Seçim Menüsü
+
+Kullanımı gayet basittir. Üyenin etkileşim kuracağı menüye sahip olacağı rol(ler)i eklersiniz.
+
+1. Seçeneklerden `Seçim Menüsü`nü seçin.
+2. Ardından, `Seçenek Ekle`yi seçin.
+3. Her biri aşağıda ayrıntılı olarak açıklanan çeşitli seçenekler bulunmaktadır:
+
+## Seçim Menüsü Yer Tutucu
+
+Kullanıcıların herhangi bir rolü seçmeden önce menü seçeneğinde dışarıdan görmesini istediğiniz metin.
+
+## Emoji
+
+Her seçenekten önce görmek istediğiniz emoji.
+
+## Başlık
+
+Kullanıcıların her seçeneğin üzerinde görmesini istediğiniz başlıktır.
+
+## Seçenek Başlığı
+
+Her seçeneğin altında görmek istediğiniz seçenek başlığı; seçeneğin içeriğini açıklamak için kullanılabilir.
+
+## Roller
+
+Kullanıcıların belirli bir menü seçeneğiyle etkileşim kurarken sahip olmaları için bir rol ayarlayabileceğiniz seçenektir. `+` butonuna tıkladığınızda sunucu rolleri listesi görüntülenir.
+
+:::caution
+
+Tek bir gömülü mesaj, en fazla 20 seçim menüsü seçeneği içerebilir.
+
+:::
+
+# Tepki
+
+Üyeler, geleneksel tepki rollerinde bir tepkiye tıkladıklarında rol alırlar.
+
+1. Açılır menüden `Tepki`yi seçin.
+2. Açılır menüden `Emoji Ekle`yi seçin.
+3. Normal/hareketli eklemek istediğiniz emojiyi seçin.
+4. `+` işaretini kullanarak bu tepki için bir rol oluşturun.
+
+:::caution
+
+Sunucudaki rolleriniz ProBot yönetim panelinde görünmüyorsa, ProBot'un rolünü sunucu rol sıralamasında en üst konuma taşıyın.
+
+:::
+
+# Rol Modu
+
+Tepki rolü için çeşitli modlar bulunur.
+
+:::caution
+
+Mod, o mesajdaki tüm seçeneklere uygulanacaktır.
+
+:::
+
+## Aç/Kapat
+
+Bu mod, kullanıcının rollere sahip olup olmamasına bağlı olarak roller ekler veya kaldırır. `ÖNERİLİR!`
+
+## Ver
+
+Bu mod, bir tepki eklendiğinde veya kaldırıldığında rolleri ekler. 'Kuralları kabul etmek için harika!'
+
+
+## Al
+
+Bu mod, bir tepki eklendiğinde veya kaldırıldığında rolleri kaldırır.
+
+# Bildirim Türü
+
+ProBot'un kullanıcı etkileşimde bulunduğunda ona yanıt vermesi ile ilgili iki seçeneğiniz olacaktır:
+
+## Bildir
+
+Bu seçenek, etkileşime giren kullanıcı tarafından görülebilecek bir yanıt mesajı gönderir.
+
+1. İlk seçenek, rol eklendiğinde yanıt mesajı gönderir.
+2. İkinci seçenek, rol kaldırıldığında yanıt mesajı gönderir.
+3. Üçüncü seçenek, kullanıcı rollerinde herhangi bir değişiklik yapılmadığı zaman yanıt mesajı gönderir.
+
+:::info
+
+Botun rolden bahsetmesini sağlamak için, yanıt mesajına `{0}` ekleyin. `{0}`, atanacak roldür.
+
+:::
+
+## Sessiz
+
+Kullanıcı etkileşiminde kullanıcının dikkatini çekmeden sessiz kalmak istiyorsanız bu seçenek tam size göre çünkü bu seçenekte herhangi bir cevap mesajı gönderilmez.
+
+
+# Önemli Notlar
+
+:::warning
+
+Arka planda belirli menüler veya butonlar varsa, ancak bunları kullanmıyorsanız tepki bozulabilir; bu sorunu çözmek için, aynı mesaja eklediğiniz ancak kullanmadığınız tüm seçme menülerini ve buton seçeneklerini silmeniz gerekir.
+
+:::
+
+:::warning
+
+Daha önce tepki rol ayarlanmış bir gömülü mesaja tekrar ayarlamanıza izin verilmez çünkü bunu yapmak sorunlara neden olabilir.
+
+:::
+
+:::info
+
+Tek bir seçenekte birden çok rol vermek için `Premium Tier 1/2` abonesi olmanız gerekir.
+
+:::

@@ -1,0 +1,84 @@
+---
+sidebar_position: 8
+title: Değişkenler
+description: ProBot değişkenleri ile ilgili bilgi edinin 
+keywords: [mention, variable, id, user, variables]
+---
+
+# ProBot Yönetim Paneli Değişkenleri
+
+Mesajların daha profesyonel ve estetik görünmesi için çeşitli değişkenler kullanabilirsiniz. Bu sayfada, yönetim panelinizin farklı bölümlerinde kullanabileceğiniz tüm değişkenleri görebilirsiniz.
+
+## Gereksinimler
+
+Değişkenleri kullanmadan önce, cihazınızda Discord Geliştirici Modunu etkinleştirmelisiniz. Bu mod, size belirli şeylerden bahsetmek için ihtiyaç duyduğunuz ID'leri sağlayacaktır.
+
+## Discord Geliştirici Modunu Etkinleştirme 
+
+> PC'de
+1. Discord'u Açın
+2. `Ayarlar` ikonuna tıklayın
+3. `Uygulama Ayarları` kategorisinde `Gelişmiş` sekmesine gelin
+4. Geliştirici Modunu Açık konumuna getirin
+
+> Telefonda
+1. Discord'u Açın
+2. `Ayarlar` ikonuna dokunun
+3. `Uygulama Ayarları` kategorisinde `Davranış` sekmesine gelin
+4. Geliştirici Modunu Açık konumuna getirin
+
+Geliştirici Modunu etkinleştirdikten sonra, artık değişkenleri kullanabilirsiniz.
+
+## Karşılayıcı Değişkenleri
+
+Aşağıdaki değişkenler, ProBot Panelinizin Karşılama bölümünde kullanılabilir:
+
+| Değişken | Açıklama | 
+| ------------- |:-------------:|
+| `[user]` | Yeni gelen üyeyi etiketler | 
+| `[inviter]` | Davet edeni etiketler |
+| `[server]` | Sunucu adını görüntüler |
+| `[userName]` | Yeni gelen üyenin adını görüntüler |
+| `[inviterName]` | Davet edenin adını görüntüler |
+| `[memberCount]` | Ulaşılan üye sayısını gösterir |
+| `<@user_id>` | ID kullanarak belirli bir kullanıcıyı etiketler |
+| `<#channel_id>` | ID kullanarak belirli bir kanalı etiketler |
+| `<@&role_id>` | ID kullanarak belirli bir rolü etiketler |
+
+## Otomatik Yanıtlayıcı Değişkenleri
+
+Aşağıdaki değişkenler, Yönetici Panelinizin Otomatik Yanıtlayıcı bölümünde kullanılabilir:
+
+| Değişken | Açıklama | 
+| ------------- |:-------------:|
+| `[user]` | Tetikleyiciyi kullanan üyeyi etiketler |
+| `[userName]` | Tetikleyiciyi kullanan kullanıcının adını görüntüler |
+| `[invites]` | Ulaştığınız davet sayısını görüntüler |
+| `<@user_id>` | ID kullanarak belirli bir kullanıcıyı etiketler |
+| `<#channel_id>` | ID kullanarak belirli bir kanalı etiketler |
+| `<@&role_id>` | ID kullanarak belirli bir rolü etiketler |
+
+## Gömülü Mesaj Değişkenleri
+
+Aşağıdaki değişkenler, Yönetici Panelinizin Gömülü Mesajlar bölümünde kullanılabilir:
+
+| Değişken | Açıklama | 
+| ------------- |:-------------:|
+| `[text](link)` | Bir köprü(örneğin bir link için) oluşturur |
+| `<@user_id>` | ID kullanarak belirli bir kullanıcıyı etiketler |
+| `<#channel_id>` | ID kullanarak belirli bir kanalı etiketler |
+| `<@&role_id>` | ID kullanarak belirli bir rolü etiketler |
+
+## Seviye Sistemi 
+
+Aşağıdaki değişkenler, Yönetici Panelinizin Seviye Sistemi bölümünde kullanılabilir:
+
+| Değişken | Açıklama | 
+| ------------- |:-------------:|
+| `[level]` | Ulaşılan seviyeyi yazdırır | 
+| `[user] `| Yeni seviyeye ulaşan üyeyi etiketler |
+| `[user.username]` | Yeni seviyeye ulaşan üyenin kullanıcı adını yazdırır |
+| `[user.tag]` | Yeni seviyeye ulaşan üyenin kullanıcı etiketini yazdırır |
+| `[oldLevel] ` | Yeni seviyeye ulaşan üyenin eski seviyesini yazdırır |
+
+Yukarıda saydığımız değişkenleri kullanarak mesajları daha profesyonel ve dikkat çekici hale getirebilirsiniz.

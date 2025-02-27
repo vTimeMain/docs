@@ -1,0 +1,99 @@
+---
+sidebar_position: 6
+keywords: [Level System, Text, XP Roles, Role Rewards, Level-Up Message] 
+---
+
+# Seviye Sistemi
+
+ProBot seviye sistemi ile aktif sunucu üyeleri, belirli bir seviyeye ulaştıklarında otomatik olarak seviye rolleri, ayrıcalıklı izinler ve gizemli kanallara erişim ile ödüllendirilebilir!
+
+:::info
+
+ProBot Yönetim Paneli, burada açıklanan yapılandırmaların yönetildiği yerdir.
+
+1. Kontrol paneline gidin ve oturum açın.
+2. Soldaki menüden sunucunuzu seçin.
+3. Modülü seçin ve etkinleştirildiğinden emin olun.
+
+:::
+
+Özelleştirilmiş bir seviye atlama deneyimi oluşturmak için ayarlanabilecek üç farklı seçeneğe sahip olacaksınız.
+
+## XP Kazandırmayan Roller
+
+Bu seçeneği kullanarak, seçilen rollere sahip belirli kullanıcıların sunucunuzda seviye kazanmasını engelleyebilirsiniz.
+
+## XP Kazandırmayan Kanallar
+
+Belirli kanallarda seviye toplanmasını engelleyebilirsiniz.
+
+## Seviye Atlama Mesajı
+
+Bir üst seviyeye ulaşan üyelere tebrik mesajları gönderin. Bu mesajlarda benzersiz değişkenler de kullanabilirsiniz!
+
+:::caution
+
+**Seviye atlama mesajı** yalnızca yazı seviyesi atlamış olanlara gönderilecektir. Şu anlık ses düzeyinde bir mesaj gönderilmeyecektir.
+
+:::
+
+## Kurulum
+
+Rol ödüllendirme sistemini kurmak için yapılması gerekenler aşağıda açıklandığı gibidir:
+
+
+Rol ödülünü, kullanıcıların ulaşması gereken özel bir seviyeyi ve aşağıda ayrıntıları verilen diğer seçenekleri ekleyebileceğiniz `Rol Ödülü Ekle` adlı bir buton bulunuyor.
+
+### Yazı Seviyesi
+
+- Bu, bağımsız olarak ayarlanmışsa, seviye rolünü elde etmek için bir üyenin ulaşması gereken yazı seviyesidir.
+
+- Yazı seviyesi aralığı 0 ila 100'dür; kullanıcılara gerekli seviyeye ulaştıkça ek ödüller sağlanır.
+
+### Ses Seviyesi
+
+- Bu, bağımsız olarak ayarlanmışsa, seviye rolünü elde etmek için bir üyenin ulaşması gereken ses seviyesidir.
+
+- Ses seviyesi aralığı 0 ila 100'dür; kullanıcılara gerekli seviyeye ulaştıkça ek ödüller sağlanır.
+
+### Rol Ödülleri
+
+Üyeleri, seviyelerde ilerledikçe olağanüstü seviye pozisyonlarıyla ödüllendirin.
+
+:::caution
+
+Roller listede görüntülenmiyorsa, botun rolü tüm sunucu rollerinin altındadır. Bu sorunu çözmek için, rollerin görüntülendiğinden emin olmak için bot rolünü rol sıralamasında en üst konuma taşıyın.
+
+:::
+
+## Daha yüksek bir ödül alındığında kaldır
+
+Kullanıcılar daha yüksek seviyelere ulaştığında seviye rollerinin kaldırılıp kaldırılmayacağına karar vermek tamamen size kalmış.
+
+- Seçeneği devre dışı bırakırsanız roller üst üste yığılır.
+
+- Seçeneği etkinleştirirseniz, daha yüksek bir seviyeye ulaşıldığında eski roller kaldırılır.
+
+## DM üzerinden mesaj at
+
+Yazı düzeyinde bir rol aldıklarında özel mesaj yoluyla üyeyi bilgilendirir.
+
+## Önemli Notlar
+
+:::important Seviye gereksinimi ayarlarken ortaya çıkabilecek üç potansiyel durum
+
+1. **Hem Ses hem Yazı**: Herhangi bir seçenekte `0` yazmadan hem metin hem de ses düzeyi şartı ayarlarsanız, hem Metin hem de Ses gerekli olacaktır. Bu, kullanıcının rol ödülünü almak için her iki seviyeye de ulaşmasını gerektirecektir.
+
+2. **Sadece Yazı**: Yazı seviyesi ihtiyacı ayarlarsanız ve Sesi `0` olarak bırakırsanız, yalnızca Yazı gerekli olacaktır. Bu, kullanıcının Metnin rol ödülünü alması için gereken seviyeye ulaşmasını gerektirecektir.
+
+3. **Sadece Ses**: Ses seviyesi ihtiyacı ayarlarsanız ve Yazıyı `0` olarak bırakırsanız, yalnızca Ses gerekli olacaktır. Bu, kullanıcının Sesin rol ödülünü alması için gereken seviyeye ulaşmasını gerektirecektir.
+
+4. **Rol Pozisyonu**: Birçok seviye için aynı rol ödüllerini seçtiyseniz, endişelenmeyin; aynı rol için belirlediğiniz herhangi bir seviyenin gereksinimlerine ulaştıkça, kullanıcılara belirttiğiniz rolü sağlamaya devam edecektir.
+
+:::
+
+:::caution
+
+Kullanıcıların, botun XP verilerini güncellemesi ve onlara ses düzeyinde ödüller vermesi için mesaj yazması gerekir, ancak o zaman bot onları ödüllendirebilir.
+
+:::

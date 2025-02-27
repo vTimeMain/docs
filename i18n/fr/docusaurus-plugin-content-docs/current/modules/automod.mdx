@@ -1,0 +1,93 @@
+---
+sidebar_position: 17
+title: Modération Automatique
+description: Un guide pour bien configurer le ProBot Modération Automatique pour votre serveur
+keywords: [Spam, automation, invite links, caps, mention] 
+---
+
+
+# Modération Automatique
+
+Assurez un environnement de serveur fluide et sans stress avec ProBot Modération Automatique. Dites adieu aux spammeurs et aux annonceurs, et profitez de la tranquillité d'esprit en sachant que ProBot travaille sans relâche pour maintenir un environnement sûr et sécurisé pour votre communauté.
+
+:::Info
+
+Le tableau de bord est l'endroit où les configurations décrites ici sont gérées.
+
+1. Accédez au tableau de bord et connectez-vous.
+2. Sélectionnez votre serveur dans le menu de gauche.
+3. Choisissez le module et assurez-vous qu'il est activé.
+
+:::
+
+## Options de Détection
+
+Les options suivantes sont disponibles pour détecter les spams potentiels ou les messages malveillants sur votre serveur:
+
+:::note
+
+Nous avons quelques options de détection qui sont gérées par la règle AutoMod dans Discord, qui sera indiquée à côté de l'option AutoMod. ProBot gérera ceux qui n'ont pas le scan discord automod mentionné.
+
+:::
+
+> **SPAM (5 MESSAGES/5 SEC)**: cette option détecte lorsqu'un utilisateur envoie plus de cinq messages dans une fenêtre de cinq secondes.
+
+> **MAUVAIS MOTS**: cette option détecte les messages contenant des mots grossiers. **(Scan des messages alimenté par Discord AutoMod)**
+
+> **TEXTE DUPLIQUÉ**: cette option détecte les messages contenant du texte en double.
+
+> **MESSAGES RÉPÉTÉS**: cette option détecte les messages qui répètent du texte ou des lignes comme "SPAM SPAM SPAM SPAM". **(Niveau 2)**
+
+> **INVITATIONS DISCORD**: cette option détecte les messages contenant des liens d'invitation discord. **(Scan des messages alimenté par Discord AutoMod)**
+
+> **LIENS**: cette option détecte les messages contenant des liens. **(Scan des messages alimenté par Discord AutoMod)**
+
+> **SPAM DE MAJUSCULES (70% > MAJUSCULES)** : cette option détecte les messages écrits en majuscules, comme "HELLO THIS IS PROBOT". **(Scan des messages alimenté par Discord AutoMod)**
+
+> **SPAM D'EMOJI**: cette option détecte les messages contenant huit émoticônes ou plus.
+
+> **MENTION MASSIVE**: cette option détecte les messages qui mentionnent un grand nombre d'utilisateurs. **(Scan des messages alimenté par Discord AutoMod)**
+
+## Options d'Action
+
+Chaque option de détection offre trois options d'action différentes pour répondre aux besoins spécifiques de votre communauté. Ces actions sont:
+
+1. **Bloquer le message**: supprime le message qui a déclenché la détection.
+
+2. **Mettre le membre en muet**: coupe le son du membre qui a envoyé le message déclencheur.
+
+3. **Timeout Member**: Timeout le membre qui a envoyé le message déclencheur. **(Uniquement disponible dans les options de détection gérées par la règle Discord AutoMod)**
+
+## Paramètres
+
+Chaque option de détection comporte une option **Paramètres**, indiquée par une icône d'engrenage `⚙️`. En cliquant sur cette option, vous découvrirez une gamme de paramètres que vous pouvez ajuster pour optimiser l'utilisation de ProBot Automod pour votre serveur.
+
+> **SALONS DÉSACTIVÉS** : chaînes qui seront exemptées des options de détection.
+
+> **RÔLES DÉSACTIVÉS** : rôles qui seront exemptés des options de détection.
+
+Dans les options d'automatisation **Mauvais Mots** et **Liens**, il existe des paramètres supplémentaires introuvables dans les options par défaut:
+
+> **Mauvais Mots**
+
+- Mauvais Mots: une liste de mots grossiers individuels qui déclencheront l'option de détection.
+
+- NE CORRESPOND PAS SI ELLE FAIT PARTIE D'UN MOT: Si elle est activée, cette option empêchera la détection des mots qui contiennent les mauvais mots mais qui ne leur sont pas identiques.
+
+> **Liens**
+
+- LIENS DE LA LISTE BLANCHE: une liste d'URL qui ne déclencheront pas l'option de détection, même si elles contiennent des liens.
+
+- LIENS DE LA LISTE NOIRE: une liste d'URL qui déclencheront l'option de détection, même si elles ne contiennent pas de liens.
+
+## Fonctionnalités Supplémentaires
+
+En plus des options de détection et d'action décrites ci-dessus, ProBot Automod inclut également les fonctionnalités suivantes:
+
+> **SALONS IGNORÉS**: chaînes qui seront exemptées de toutes les options de détection.
+
+> **RÔLES IGNORÉS**: les rôles qui seront exemptés de toutes les options de détection.
+
+> **SALONS D'IMAGES SEULEMENT**: vous permet d'imposer que seules les images soient envoyées dans des canaux spécifiques.
+
+> **SALONS DE LIENS YOUTUBE UNIQUEMENT**: vous permet d'imposer que seuls les liens YouTube soient envoyés dans des chaînes spécifiques.

@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Getting Started": {
+    "message": "Başlangıç",
+    "description": "The label for category Getting Started in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Getting Started.link.generated-index.description": {
+    "message": "Başlangıç",
+    "description": "The generated-index page description for category Getting Started in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Modules": {
+    "message": "Modüller",
+    "description": "The label for category Modules in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Modules.link.generated-index.description": {
+    "message": "Modüller",
+    "description": "The generated-index page description for category Modules in sidebar tutorialSidebar"
+  }
+}
