@@ -17,26 +17,26 @@
   },
   "link.item.label.Discord": {
     "message": "Discord",
-    "description": "The label of footer link with label=Discord linking to https://discord.gg/probot"
+    "description": "The label of footer link with label=Discord linking to https://discord.gg/vTime"
   },
   "link.item.label.Reddit": {
     "message": "Reddit",
-    "description": "The label of footer link with label=Reddit linking to https://reddit.com/r/probot"
+    "description": "The label of footer link with label=Reddit linking to https://reddit.com/r/vTime"
   },
   "link.item.label.Twitter": {
     "message": "Twitter",
-    "description": "The label of footer link with label=Twitter linking to https://twitter.com/intent/follow?screen_name=tryProBot"
+    "description": "The label of footer link with label=Twitter linking to https://twitter.com/intent/follow?screen_name=tryvTime"
   },
   "link.item.label.Commands": {
     "message": "Commands",
-    "description": "The label of footer link with label=Commands linking to https://probot.io/commands"
+    "description": "The label of footer link with label=Commands linking to https://vTime.io/commands"
   },
   "copyright": {
-    "message": "Copyright © 2023 ProBot, Inc. Built with Docusaurus.",
+    "message": "Copyright © 2023 vTime, Inc. Built with Docusaurus.",
     "description": "The footer copyright"
   },
   "logo.alt": {
-    "message": "ProBot brand logo",
+    "message": "vTime brand logo",
     "description": "The alt text of footer logo"
   }
 }

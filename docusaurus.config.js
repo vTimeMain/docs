@@ -2,10 +2,10 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "ProBot Docs",
-  tagline: "ProBot Docs",
+  title: "vTime Docs",
+  tagline: "vTime Docs",
   url: "https://docs.vtime.me",
-  baseUrl: "/docs/",
+  baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
@@ -28,14 +28,14 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/ProBotOrg/docs/blob/master",
+          editUrl: "https://github.com/vTimeMain/docs/blob/master",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
         blog: false,
         gtag: {
-          trackingID: "G-D4J7KG79HW",
+          trackingID: "G-2ME5P0RZYD", // Google analytics
         },
       }),
     ],
@@ -50,17 +50,17 @@ const config = {
         respectPrefersColorScheme: false,
       },
       algolia: {
-        appId: "BWE1MS63HY",
-        apiKey: "815249683b18febc9f81ffb305465b9f",
-        indexName: "probot",
+        appId: "JSLGWACAZ8",
+        apiKey: "d868c82e02d7d2757de1eab1a95f78da",
+        indexName: "vtime_me_jslgwacaz8_pages",
         contextualSearch: true,
         aggregateContent: true,
       },
-      image: "img/probot_docs.png",
+      image: "img/vTime_docs.png",
       navbar: {
-        title: "ProBot Docs",
+        title: "vTime Docs",
         logo: {
-          alt: "ProBot Docs",
+          alt: "vTime Docs",
           src: "img/logo.png",
         },
         items: [
@@ -71,12 +71,12 @@ const config = {
             label: "Introduction",
           },
           {
-            to: "https://probot.io/dashboard",
+            to: "https://vTime.io/dashboard",
             label: "Dashboard",
             position: "left",
           },
           {
-            to: "https://discord.com/invite/ProBot",
+            to: "https://discord.com/invite/vTime",
             label: "Contact support",
             position: "left",
           },
@@ -89,7 +89,7 @@ const config = {
       footer: {
         style: "dark",
         logo: {
-          alt: "ProBot brand logo",
+          alt: "vTime brand logo",
           src: "img/logo.png",
           width: 130,
           height: 130,
@@ -110,15 +110,15 @@ const config = {
             items: [
               {
                 label: "Discord",
-                href: "https://discord.gg/probot",
+                href: "https://discord.gg/vTime",
               },
               {
                 label: "Reddit",
-                href: "https://reddit.com/r/probot",
+                href: "https://reddit.com/r/vTime",
               },
               {
                 label: "Twitter",
-                href: "https://twitter.com/intent/follow?screen_name=tryProBot",
+                href: "https://twitter.com/intent/follow?screen_name=tryvTime",
               },
             ],
           },
@@ -127,12 +127,12 @@ const config = {
             items: [
               {
                 label: "Commands",
-                href: "https://probot.io/commands",
+                href: "https://vTime.io/commands",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} ProBot, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} vTime, Inc. Built with Docusaurus.`,
       },
       prism: {
         darkTheme: darkCodeTheme,

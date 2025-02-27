@@ -6,10 +6,10 @@
     "message": "Tableau de Bord Votre Guichet Unique pour la Gestion de Serveur"
   },
   "homepage.feature_one_category_second": {
-    "message": "Configurer ProBot"
+    "message": "Configurer vTime"
   },
   "homepage.feature_one_description_second": {
-    "message": "Étape par Étape pour Inviter ProBot"
+    "message": "Étape par Étape pour Inviter vTime"
   },
   "homepage.feature_one_category_third": {
     "message": "FAQ"
@@ -49,10 +49,10 @@
     "message": "Introduction"
   },
   "homepage.header_welcome": {
-    "message": "Bienvenue dans la documentation ProBot!"
+    "message": "Bienvenue dans la documentation vTime!"
   },
   "homepage.header_welcome_description": {
-    "message": "ProBot est un bot polyvalent hautement configurable qui offre des fonctionnalités telles que lq salutations par image, des journaux détaillés, des commandes sociales, la modération, des rôles auto-assignables, des notifications sur les réseaux sociaux et la protection pour votre serveur."
+    "message": "vTime est un bot polyvalent hautement configurable qui offre des fonctionnalités telles que lq salutations par image, des journaux détaillés, des commandes sociales, la modération, des rôles auto-assignables, des notifications sur les réseaux sociaux et la protection pour votre serveur."
   },
   "homepage.header_go_to_docs": {
     "message": "Aller à Docs"

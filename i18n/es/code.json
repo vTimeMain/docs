@@ -13,10 +13,10 @@
     "message": "Dashboard El Apartado Único Para Editar Su Servidor"
   },
   "homepage.feature_one_category_second": {
-    "message": "Configuración de ProBot"
+    "message": "Configuración de vTime"
   },
   "homepage.feature_one_description_second": {
-    "message": "Paso a paso para invitar a ProBot"
+    "message": "Paso a paso para invitar a vTime"
   },
   "homepage.feature_one_category_third": {
     "message": "FAQ"
@@ -49,10 +49,10 @@
     "message": "Apartados"
   },
   "homepage.header_welcome": {
-    "message": "¡Bienvenido a ProBot Docs!"
+    "message": "¡Bienvenido a vTime Docs!"
   },
   "homepage.header_welcome_description": {
-    "message": "ProBot es un bot polivalente y altamente configurable que ofrece funciones como recepción de imágenes, registros detallados, comandos sociales, moderación, roles autoasignables, notificaciones de redes sociales y protección para tu servidor."
+    "message": "vTime es un bot polivalente y altamente configurable que ofrece funciones como recepción de imágenes, registros detallados, comandos sociales, moderación, roles autoasignables, notificaciones de redes sociales y protección para tu servidor."
   },
   "homepage.header_go_to_docs": {
     "message": "Ir a Docs"

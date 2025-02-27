@@ -6,10 +6,10 @@
     "message": "サーバーを一元管理できるダッシュボード"
   },
   "homepage.feature_one_category_second": {
-    "message": "ProBotの設定"
+    "message": "vTimeの設定"
   },
   "homepage.feature_one_description_second": {
-    "message": "ProBotを招待する"
+    "message": "vTimeを招待する"
   },
   "homepage.feature_one_category_third": {
     "message": "FAQ"
@@ -49,10 +49,10 @@
     "message": "はじめに"
   },
   "homepage.header_welcome": {
-    "message": "ProBotドキュメントへようこそ！"
+    "message": "vTimeドキュメントへようこそ！"
   },
   "homepage.header_welcome_description": {
-    "message": "ProBotは、画像付きのようこそメッセージ、詳細なログ、便利コマンド、モデレーション、リアクションロール、SNS通知、サーバーの保護などの機能を提供する、多機能で高度に設定可能なBotです。"
+    "message": "vTimeは、画像付きのようこそメッセージ、詳細なログ、便利コマンド、モデレーション、リアクションロール、SNS通知、サーバーの保護などの機能を提供する、多機能で高度に設定可能なBotです。"
   },
   "homepage.header_go_to_docs": {
     "message": "ドキュメントへ"

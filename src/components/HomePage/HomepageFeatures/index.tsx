@@ -14,62 +14,95 @@ type FeatureItem = {
 
 const SERVER_MANAGEMENT: FeatureItem[] = [
   {
-    category: <Translate id="homepage.feature_one_category_first">Dashboard Setup</Translate>,
+    category: (
+      <Translate id="homepage.feature_one_category_first">
+        Dashboard Setup
+      </Translate>
+    ),
     Svg: require("@site/static/img/landing-page/messageIcon.svg").default,
-    description: <Translate id="homepage.feature_one_description_first">
-      Dashboard Your One-Stop-Shop for Server Management
-      </Translate>,
+    description: (
+      <Translate id="homepage.feature_one_description_first">
+        Dashboard Your One-Stop-Shop for Server Management
+      </Translate>
+    ),
     redirect: "/docs/getting-started/dashboard",
   },
   {
-    category: <Translate id="homepage.feature_one_category_second">Setup ProBot</Translate>,
+    category: (
+      <Translate id="homepage.feature_one_category_second">
+        Setup vTime
+      </Translate>
+    ),
     Svg: require("@site/static/img/landing-page/messageIcon.svg").default,
-    description: <Translate id="homepage.feature_one_description_second">
-    Step by Step to invite ProBot
-    </Translate>,
+    description: (
+      <Translate id="homepage.feature_one_description_second">
+        Step by Step to invite vTime
+      </Translate>
+    ),
     redirect: "/docs/getting-started/setup",
   },
   {
-    category: <Translate id="homepage.feature_one_category_third">FAQ</Translate>,
+    category: (
+      <Translate id="homepage.feature_one_category_third">FAQ</Translate>
+    ),
     Svg: require("@site/static/img/landing-page/messageIcon.svg").default,
-    description: <Translate id="homepage.feature_one_description_third">
-    Frequently Asked Questions
-    </Translate>,
+    description: (
+      <Translate id="homepage.feature_one_description_third">
+        Frequently Asked Questions
+      </Translate>
+    ),
     redirect: "/docs/getting-started/faq",
   },
 ];
 
 const UTILITIES: FeatureItem[] = [
   {
-    category: <Translate id="homepage.feature_two_category_one">Modules</Translate>,
+    category: (
+      <Translate id="homepage.feature_two_category_one">Modules</Translate>
+    ),
     Svg: require("@site/static/img/landing-page/messageIcon.svg").default,
-    description: <Translate id="homepage.feature_two_description_first">
-    Custom Welcome and Goodbye Messages for Engaging Discord Server Management
-    </Translate>,
+    description: (
+      <Translate id="homepage.feature_two_description_first">
+        Custom Welcome and Goodbye Messages for Engaging Discord Server
+        Management
+      </Translate>
+    ),
     redirect: "/docs/modules/welcome",
   },
   {
-    category: <Translate id="homepage.feature_two_category_one">Modules</Translate>,
+    category: (
+      <Translate id="homepage.feature_two_category_one">Modules</Translate>
+    ),
     Svg: require("@site/static/img/landing-page/messageIcon.svg").default,
-    description: <Translate id="homepage.feature_two_description_second">
-    Self-Assignable Roles
-    </Translate>,
+    description: (
+      <Translate id="homepage.feature_two_description_second">
+        Self-Assignable Roles
+      </Translate>
+    ),
     redirect: "/docs/modules/self-assignable-roles",
   },
   {
-    category: <Translate id="homepage.feature_two_category_one">Modules</Translate>,
+    category: (
+      <Translate id="homepage.feature_two_category_one">Modules</Translate>
+    ),
     Svg: require("@site/static/img/landing-page/messageIcon.svg").default,
-    description: <Translate id="homepage.feature_two_description_third">
-    Easily create embeds for your server!
-    </Translate>,
+    description: (
+      <Translate id="homepage.feature_two_description_third">
+        Easily create embeds for your server!
+      </Translate>
+    ),
     redirect: "/docs/modules/embed",
   },
   {
-    category: <Translate id="homepage.feature_two_category_one">Modules</Translate>,
+    category: (
+      <Translate id="homepage.feature_two_category_one">Modules</Translate>
+    ),
     Svg: require("@site/static/img/landing-page/messageIcon.svg").default,
-    description: <Translate id="homepage.feature_two_description_four">
-    Level System
-    </Translate>,
+    description: (
+      <Translate id="homepage.feature_two_description_four">
+        Level System
+      </Translate>
+    ),
     redirect: "/docs/modules/level_system",
   },
 ];
@@ -84,10 +117,7 @@ function Feature({ category, Svg, description, color, redirect }: FeatureItem) {
         <h3 className={styles["feature__category"]}>{category}</h3>
         <p className={styles["feature__description"]}>{description}</p>
         <Link to={redirect} className={styles["feature__learn-more"]}>
-          <Translate
-            id="homepage.learn_more">
-              Learn More
-          </Translate>
+          <Translate id="homepage.learn_more">Learn More</Translate>
         </Link>
       </div>
     </div>
@@ -99,11 +129,10 @@ export default function HomepageFeatures(): JSX.Element {
     <section className={styles["features-wrapper"]}>
       <div className="container">
         <h5 className="text-h5">
-        <Translate
-            id="homepage.category_first_section">
-              Server management
+          <Translate id="homepage.category_first_section">
+            Server management
           </Translate>
-          </h5>
+        </h5>
         <div className={clsx(styles.features)}>
           {SERVER_MANAGEMENT.map((props, idx) => (
             <Feature key={idx} {...props} />
@@ -112,10 +141,8 @@ export default function HomepageFeatures(): JSX.Element {
       </div>
       <div className="container">
         <h5 className="text-h5">
-        <Translate
-            id="homepage.category_second_section">
-              Modules
-          </Translate></h5>
+          <Translate id="homepage.category_second_section">Modules</Translate>
+        </h5>
         <div className={clsx(styles.features, styles.green)}>
           {UTILITIES.map((props, idx) => (
             <Feature color="green" key={idx} {...props} />

@@ -7,10 +7,10 @@
     "message": "Giriş"
   },
   "homepage.header_welcome": {
-    "message": "ProBot Docs'a Hoş Geldiniz!"
+    "message": "vTime Docs'a Hoş Geldiniz!"
   },
   "homepage.header_welcome_description": {
-    "message": "ProBot, sunucunuz için Görüntülü Karşılayıcı, Günlükler, Genel komutlar, Moderasyon, Tepki rol, sosyal medya bildirimleri ve koruma gibi özellikler sunan, yüksek düzeyde yapılandırılabilir, çok amaçlı bir bottur."
+    "message": "vTime, sunucunuz için Görüntülü Karşılayıcı, Günlükler, Genel komutlar, Moderasyon, Tepki rol, sosyal medya bildirimleri ve koruma gibi özellikler sunan, yüksek düzeyde yapılandırılabilir, çok amaçlı bir bottur."
   },
   "homepage.header_go_to_docs": {
     "message": "Dokümanlar'a git"
@@ -22,10 +22,10 @@
     "message": "Sunucu Yönetimi için Tek Noktadan Yönetim Paneli"
   },
   "homepage.feature_one_category_second": {
-    "message": "ProBot Kurulumu"
+    "message": "vTime Kurulumu"
   },
   "homepage.feature_one_description_second": {
-    "message": "Adım Adım ProBot'u Davet Etmek"
+    "message": "Adım Adım vTime'u Davet Etmek"
   },
   "homepage.feature_one_category_third": {
     "message": "SSS"

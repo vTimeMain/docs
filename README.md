@@ -1,5 +1,5 @@
-# ProBot Docs
+# vTime Docs
 
 This documantion is built using [Docusaurus 2](https://docusaurus.io/).
 
-Feel free to contribute 
+Feel free to contribute

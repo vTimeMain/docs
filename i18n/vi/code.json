@@ -13,10 +13,10 @@
     "message": "Dashboard Your One-Stop-Shop for Server Management"
   },
   "homepage.feature_one_category_second": {
-    "message": "Setup ProBot"
+    "message": "Setup vTime"
   },
   "homepage.feature_one_description_second": {
-    "message": "Step by Step to invite ProBot"
+    "message": "Step by Step to invite vTime"
   },
   "homepage.feature_one_category_third": {
     "message": "FAQ"
@@ -49,10 +49,10 @@
     "message": "Modules"
   },
   "homepage.header_welcome": {
-    "message": "Welcome to the ProBot Docs!"
+    "message": "Welcome to the vTime Docs!"
   },
   "homepage.header_welcome_description": {
-    "message": "ProBot is a highly configurable, multipurpose bot that offers features like image greeting, detailed logs, social commands, moderation, self-assignable roles, social media notifications, and protection for your server."
+    "message": "vTime is a highly configurable, multipurpose bot that offers features like image greeting, detailed logs, social commands, moderation, self-assignable roles, social media notifications, and protection for your server."
   },
   "homepage.header_go_to_docs": {
     "message": "Go to Docs"
