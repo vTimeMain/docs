@@ -8,12 +8,12 @@ const config = {
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "img/vTime.ico",
   organizationName: "vTimeMain",
   projectName: "docs",
   i18n: {
     defaultLocale: "en",
-    locales: ["en", "ar", "es", "fr", "tr", "vi", "ru", "de", "ja"],
+    locales: ["en", "ar", "es", "fr", "tr", "ru", "ja"],
     localeConfigs: {
       ar: {
         direction: "rtl",
@@ -52,7 +52,7 @@ const config = {
       algolia: {
         appId: "JSLGWACAZ8",
         apiKey: "d868c82e02d7d2757de1eab1a95f78da",
-        indexName: "vtime_me_jslgwacaz8_pages",
+        indexName: "vTime",
         contextualSearch: true,
         aggregateContent: true,
       },
@@ -71,7 +71,7 @@ const config = {
             label: "Introduction",
           },
           {
-            to: "https://vTime.io/dashboard",
+            to: "https://vTime.me/dashboard",
             label: "Dashboard",
             position: "left",
           },
@@ -126,8 +126,24 @@ const config = {
             title: "More",
             items: [
               {
+                label: "vTime Website",
+                href: "https://vTime.me",
+              },
+              {
                 label: "Commands",
-                href: "https://vTime.io/commands",
+                href: "https://vTime.me/commands",
+              },
+              {
+                label: "Support",
+                href: "https://vTime.me/commands",
+              },
+              {
+                label: "Privacy Policy",
+                href: "https://vTime.me/privacy",
+              },
+              {
+                label: "Privacy Policy",
+                href: "https://vTime.me/terms",
               },
             ],
           },
