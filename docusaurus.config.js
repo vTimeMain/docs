@@ -50,9 +50,9 @@ const config = {
         respectPrefersColorScheme: false,
       },
       algolia: {
-        appId: "JSLGWACAZ8",
-        apiKey: "d868c82e02d7d2757de1eab1a95f78da",
-        indexName: "vTime",
+        appId: "EIXRQE8V4M",
+        apiKey: "31c6e641e9741ac44d474bd545f1acaa",
+        indexName: "docs_vtime_me_eixrqe8v4m_pages",
         contextualSearch: true,
         aggregateContent: true,
       },
